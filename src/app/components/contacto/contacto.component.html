@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="form-container">
+                <h1 class="text-center mb-4">Contacto</h1>
+                <form [formGroup]="userForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" formControlName="nombre" class="form-control">
+                        <div *NgIf="userForm.get('nombre')?.hasError('required') && userForm.get('nombre').touched"
+                            class="text-danger">
+                            Nombre requerido
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" formControlName="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" formControlName="mensaje" rows="4" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" (click)="onSubmit()" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<h1 class="mt-5 text-center text-black">Datos Personales</h1>
+
+
+<div class="dropdown-center mt-5">
+    <button class="btn btn-secondary dropdown-toggle col-12" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Nombre
+    </button>
+    <ul class="dropdown-menu">
+    <h5 class="text-center nephrite-text">Aileen Montes</h5>
+
+    </ul>
+</div>
+<div class="dropdown-center mt-2">
+    <button class="btn btn-secondary dropdown-toggle col-12" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Telefono
+    </button>
+    <ul class="dropdown-menu">
+        <h5 class="text-center">602539329</h5>
+
+    </ul>
+</div>
+
+<div class="dropdown-center mt-2">
+    <button class="btn btn-secondary dropdown-toggle col-12" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+       Email
+    </button>
+    <ul class="dropdown-menu">
+        <h5 class="text-center">538aileen&#64;gmail.com</h5>
+
+    </ul>
+</div>
+
+<div class="dropdown-center mt-2">
+    <button class="btn btn-secondary dropdown-toggle col-12" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Linkedin
+    </button>
+    <ul class="dropdown-menu">
+        <h5 class="text-center">https://www.linkedin.com/in/aileen-montes-rueda-42367019b</h5>
+
+    </ul>
+</div>
+</div>

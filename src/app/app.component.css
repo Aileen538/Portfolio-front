@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* styles.css o tu archivo de estilos */
+.footer {
+    background-color: black;
+    position: fixed;
+    bottom: -10px;
+    width: 100%;
+    height: 70px;
+
+}

@@ -1,0 +1,17 @@
+.container{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 100px;
+
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        margin-bottom: 20px;
+    }
+
+    .dropdown-center {
+        margin-bottom: 10px;
+    }
+}
+

@@ -1,0 +1,42 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic');
+
+
+.seccion {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.proyectos.row.mb-4.align-items-stretch {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.cardProyecto {
+    border-radius: 10px;
+    transition: .4s;
+    height: 95%;
+    font-family: Oswald;
+        text-align: center;
+}
+  
+
+
+.cardProyecto:hover {
+    cursor: pointer;
+    box-shadow: 1px 5px 5px rgba(22, 23, 22, 0.5);
+   
+    transform: scale(1.05);
+}
+
+
+.proyectos-container {
+    height: 600px;
+      overflow-y: auto;
+    
+}
+
