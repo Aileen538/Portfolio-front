@@ -1,6 +1,8 @@
 .links {
     display: flex;
+    flex-wrap: wrap;
     margin: 25px;
+    
 }
 
 a {
@@ -9,15 +11,22 @@ a {
     align-items: center;
     text-decoration: none;
     position: relative;
+    margin: 10px;
+     
     img{
         width: 50px;;
         height: 50px;
         left: auto;
         margin-left: 50px;
+        margin-bottom: 10px;
     }
     &:hover{
         div.hidden-label{
             opacity: 1;
+            color: white;
+                font-size: 0.85rem;
+                
+               
         }
     }
      &::before{
@@ -54,3 +63,9 @@ img {
     display: block;
 }
 
+@media (max-width: 767.98px) {
+    .links a {
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+    }
+}

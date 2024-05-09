@@ -5,13 +5,10 @@
 
 }
 
-@media (max-width: 768px) {
-    .form-container {
-        margin-bottom: 20px;
-    }
 
+@media (max-width: 767.98px) {
     .dropdown-center {
-        margin-bottom: 10px;
+        text-align: center;
+        /* Centra el contenido de los botones y textos en pantallas pequeñas */
     }
 }
-

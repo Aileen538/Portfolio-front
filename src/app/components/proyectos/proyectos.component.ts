@@ -13,6 +13,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './proyectos.component.css'
 })
 export class ProyectosComponent implements OnInit {
+
+
   proyectos: Proyectos[] = [];
 
   constructor(private proyectoService: ProyectoService) { }
@@ -40,7 +42,7 @@ export class ProyectosComponent implements OnInit {
         this.proyectos = proyectos;
       },
       error => {
-        console.error(`Error al obtener proyectos de la categoría ${categoria}:`, error);
+        console.error(`Error al obtener proyectos de la categoría ${categoria}`, error);
       }
     );
   }
