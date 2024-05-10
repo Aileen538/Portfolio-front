@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProyectoService {
   // private apiUrl = 'http://localhost:3040/api/proyectos/';
-  private apiUrl = 'https://portfoliobackfinal-1.onrender.com/api/proyectos';
+  private apiUrl = 'https://cvback-aileen.onrender.com/api/proyectos';
 
 
   constructor(private httpClient: HttpClient) { }
